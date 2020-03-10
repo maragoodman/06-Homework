@@ -1,11 +1,21 @@
+var todaysDate = $(".lead");
 var plannerContainer = $(".container");
 var hoursDisplayed = 12;
 var hoursBefore = 3;
 
-// var test = moment().format('hA');
-// test = moment().add(1,'h').format('hA');
-// var textPar = $('<p>').text(test);
-// plannerContainer.append(textPar);
+var fullDate = new Date();
+console.log(fullDate);
+
+//convert month to 2 digits
+var twoDigitMonth =
+  fullDate.getMonth().length + 1 === 1
+    ? fullDate.getMonth() + 1
+    : "0" + (fullDate.getMonth() + 1);
+
+var currentDate =
+  fullDate.getDate() + "/" + twoDigitMonth + "/" + fullDate.getFullYear();
+console.log(currentDate);
+todaysDate.append(currentDate);
 
 function generateTime() {
   var jumboContainer = $("<div>");
@@ -52,5 +62,14 @@ function generateTime() {
 function saveEvent() {
   alert("Your schedule has been saved!");
 }
+// function to clear storage and reload page
+// function reloadCal() {
+//   var reloadContainer = $("<div").addClass("reload");
+//   var reloadBtn = $("<button>").addClass("reloadBtn").on("click", function(){
+//     localStorage.clear();
+//   location.reload();
+//   }));
+//   reloadContainer.append("reloadBtn");
+// }
 
 generateTime();

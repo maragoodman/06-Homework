@@ -9,8 +9,10 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
+  width: 75%;
+  height: 100%;
+  border: 1px solid rgb(40, 40, 43);
 }
 
 .jumbotron {
@@ -19,6 +21,7 @@ textarea {
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  border-width: 100%;
 }
 
 .description {
@@ -37,14 +40,23 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  align-items: center !important;
+  height: 100%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  justify-content: center !important;
+  border: 1px solid rgb(40, 40, 43);
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .present {
@@ -58,30 +70,66 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid rgb(40, 40, 43);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #66cbe2;
   color: white;
+  height: 100%;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
-/* 
-html,
-body {
+
+/* new css code */
+.calendar-row {
+  /* background-color: blanchedalmond; */
+  margin-bottom: 0.5rem;
+  height: 50px;
+}
+
+.time-col {
+  text-align: center;
+  background-color: lightgrey;
+  font-weight: bolder;
+}
+
+.col {
+  /* padding-top: 1.6rem; */
   height: 100%;
 }
-body {
-  background-color: white;
-  color: #333333;
-  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
-  font-size: 12px;
+
+.row {
+  height: 75px;
 }
-#calendar {
-  margin-top: 30px;
-  width: 600px;
-  height: 720px;
-} */
+
+.clear-col {
+  background-color: lightgray;
+  text-align: center;
+  border: solid 1px grey;
+}
+
+.event-col {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  outline: none;
+}
+
+#start-new-day {
+  margin: auto;
+}
+
+.no-outline {
+  outline: none;
+}
+
+.eventFilled {
+  background-color: rgb(171, 207, 171);
+}
+
+.edited {
+  font-size: 6px;
+  color: red;
+}
