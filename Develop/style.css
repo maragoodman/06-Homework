@@ -83,53 +83,7 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-/* new css code */
-.calendar-row {
-  /* background-color: blanchedalmond; */
-  margin-bottom: 0.5rem;
-  height: 50px;
-}
-
-.time-col {
-  text-align: center;
-  background-color: lightgrey;
-  font-weight: bolder;
-}
-
-.col {
-  /* padding-top: 1.6rem; */
-  height: 100%;
-}
-
-.row {
-  height: 75px;
-}
-
-.clear-col {
-  background-color: lightgray;
-  text-align: center;
-  border: solid 1px grey;
-}
-
-.event-col {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  outline: none;
-}
-
-#start-new-day {
-  margin: auto;
-}
-
-.no-outline {
-  outline: none;
-}
-
-.eventFilled {
-  background-color: rgb(171, 207, 171);
-}
-
-.edited {
-  font-size: 6px;
-  color: red;
+.lead {
+  font-size: 16px;
+  font-weight: 400;
 }
